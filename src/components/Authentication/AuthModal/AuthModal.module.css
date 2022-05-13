@@ -1,0 +1,12 @@
+.auth-modal {
+    position: absolute;
+    right: 10%;
+}
+
+.google-btn {
+    transition: transform 450ms;
+}
+
+.google-btn:hover {
+    transform: scale(1.08);
+}

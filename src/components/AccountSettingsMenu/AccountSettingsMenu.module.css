@@ -1,0 +1,46 @@
+.settings-page {
+    display: flex;
+}
+
+.settings-section {
+    background: #F6F6F6;
+    padding: 3rem 2rem;
+    flex: 1;
+}
+
+.overview-section {
+    flex: 1;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 2rem 3rem 0;
+}
+
+.overview-list {
+    list-style: none;
+}
+
+.overview-list-item {
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+    .settings-page {
+        flex-direction: column;
+    }
+
+    .settings-section {
+        padding: 1rem 2rem;
+    }
+
+    .overview-section {
+        padding: 1rem 2rem 2rem 0;
+        margin-bottom: 2rem;
+    }
+
+    .table {
+        width: 80%;
+    }
+}

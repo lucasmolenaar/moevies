@@ -1,0 +1,59 @@
+.container {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    color: #F6F6F6;
+}
+
+.poster {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.info-container {
+    margin-left: 2rem;
+}
+
+.movie-title,
+.tagline {
+    margin: 0;
+}
+
+.genres {
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.overview {
+    margin-top: 2rem;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+}
+
+.add-to-watchlist {
+    margin-top: 3rem;
+    background-color: #EEBC1E;
+    transition: transform 450ms;
+}
+
+.add-to-watchlist:hover {
+    background-color: #EEBC1E;
+    transform: scale(1.08);
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .poster {
+        width: 200px;
+        margin-bottom: 2rem;
+    }
+}

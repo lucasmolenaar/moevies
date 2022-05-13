@@ -1,0 +1,19 @@
+.menu-item {
+    width: 60%;
+    height: 2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #F6F6F6;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: transform 450ms;
+}
+
+.menu-item:hover {
+    transform: scale(1.08);
+}
+

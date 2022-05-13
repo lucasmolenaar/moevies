@@ -1,0 +1,38 @@
+.page-name {
+    margin: 0 0 0 60px;
+    padding-top: 10px;
+    color: white;
+}
+
+.watchlist {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    list-style: none;
+    display: flex;
+    margin: 0 auto 0rem auto;
+}
+
+.watchlist::-webkit-scrollbar {
+    display: none;
+}
+
+.series-section {
+    margin-bottom: 5rem;
+}
+
+.no-results {
+    color: #f6f6f6;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.movies-section-title,
+.series-section-title {
+    margin: 0 0 0 60px;
+    padding-top: 10px;
+    color: #f6f6f6;
+}
+
+.movies-section-title {
+    margin-top: 1rem;
+}

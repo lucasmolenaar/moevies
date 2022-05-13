@@ -1,0 +1,13 @@
+.account-page {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.logout-btn {
+    color: #F6F6F6;
+    border: 2px solid #F6F6F6;
+    background: black;
+    cursor: pointer;
+}

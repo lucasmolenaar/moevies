@@ -1,0 +1,26 @@
+.page-name {
+    margin: 0 0 0 60px;
+    padding-top: 10px;
+    color: white;
+}
+
+.movie-list {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 5rem 0;
+}
+
+.no-results {
+    color: #f6f6f6;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 750px) {
+    .page-name {
+        margin-bottom: 1rem;
+    }
+}
+

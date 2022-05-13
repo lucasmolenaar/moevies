@@ -1,0 +1,27 @@
+.review {
+    padding: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.review:hover {
+    background: #142136;
+}
+
+.author {
+    margin: 0;
+}
+
+.content {
+    margin: 1rem 0 0 0;
+}
+
+.read-more {
+    color: #424D67;
+    cursor: pointer;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+    color: #F6F6F6;
+    cursor: pointer;
+}

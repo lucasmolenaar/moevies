@@ -1,0 +1,35 @@
+.header {
+    background-color: #424D67;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #142136;
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    color: #F6F6F6;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+}
+
+.menu-icons {
+    position: absolute;
+    right: 10%;
+    color: #F6F6F6;
+    cursor: pointer;
+}
+
+.user-icon,
+.watch-icon {
+    margin-right: 1rem;
+    transition: transform 450ms;
+}
+
+.user-icon:hover,
+.watch-icon:hover {
+    transform: scale(1.08);
+}

@@ -1,0 +1,15 @@
+.menu-section {
+    height: 350px;
+    background: #F6F6F6;
+}
+
+.menu-items {
+    width: 50%;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 800px){
+    .menu-items {
+        width: 100%;
+    }
+}

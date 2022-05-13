@@ -1,0 +1,35 @@
+.pagination {
+     margin: auto;
+     width: 200px;
+     display: flex;
+     justify-content: space-between;
+}
+
+.previous,
+.next {
+     color: #F6F6F6;
+     padding: 0.5rem 1rem;
+     background: #142136;
+     border: none;
+     border-radius: 3px;
+     font-size: 1rem;
+     text-transform: uppercase;
+     transition: transform 450ms;
+}
+
+.previous:disabled,
+.next:disabled {
+     color: gray;
+}
+
+.previous:disabled:hover,
+.next:disabled:hover {
+     cursor: not-allowed;
+     transform: scale(1);
+}
+
+.previous:hover,
+.next:hover {
+     cursor: pointer;
+     transform: scale(1.08);
+}

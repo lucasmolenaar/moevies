@@ -1,0 +1,45 @@
+.form {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.input,
+.select,
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    background: #142136;
+    color: #F6F6F6;
+    margin-right: 10px;
+}
+
+.input:focus,
+.select:focus,
+.btn:focus {
+    outline: none;
+}
+
+.input::placeholder {
+    color: rgba(246, 246, 246, 0.45);
+}
+
+.btn {
+    cursor: pointer;
+    transition: transform 450ms;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+}
+
+@media screen and (max-width: 500px) {
+    .input,
+    .select,
+    .btn {
+        padding: 5px 7.5px;
+        font-size: 14px;
+    }
+}

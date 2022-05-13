@@ -1,0 +1,19 @@
+main {
+    background-color: #424D67;
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.page-name {
+    margin: 0 0 0 60px;
+    padding-top: 10px;
+    color: white;
+}
+
+.trending-list {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 5rem auto;
+}
