@@ -35,15 +35,33 @@
     font-style: italic;
 }
 
-.add-to-watchlist {
-    margin-top: 3rem;
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.buttons a {
+    width: 100%;
+    text-decoration: none;
+}
+
+.add-to-watchlist,
+.trailer-btn {
     background-color: #EEBC1E;
     transition: transform 450ms;
 }
 
-.add-to-watchlist:hover {
+.add-to-watchlist:hover,
+.trailer-btn:hover {
     background-color: #EEBC1E;
     transform: scale(1.08);
+}
+
+@media screen and (max-width: 1000px) {
+    .buttons {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 750px) {

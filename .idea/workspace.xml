@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88040317-9e52-47f2-be5c-352491450c29" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MovieDescriptionSection/MovieDescriptionSection.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieDescriptionSection/MovieDescriptionSection.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SerieDescriptionSection/DescriptionSection.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SerieDescriptionSection/DescriptionSection.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SerieDescriptionSection/SerieDescriptionSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SerieDescriptionSection/SerieDescriptionSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MovieDescription/MovieDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MovieDescription/MovieDescription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SerieDescription/SerieDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SerieDescription/SerieDescription.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +76,7 @@
       <workItem from="1647899046445" duration="616000" />
       <workItem from="1648201650123" duration="1932000" />
       <workItem from="1649596984245" duration="149992000" />
-      <workItem from="1652641783863" duration="6053000" />
+      <workItem from="1652641783863" duration="8320000" />
     </task>
     <servers />
   </component>

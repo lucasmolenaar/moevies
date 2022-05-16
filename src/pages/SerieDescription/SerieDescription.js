@@ -9,6 +9,7 @@ import CastSection from "../../components/CastSection/CastSection";
 
 const SerieDescription = () => {
     const [serieData, setSerieData] = useState({});
+    const [trailerLink, setTrailerLink] = useState('');
     const [cast, setCast] = useState([]);
     const [similarShows, setSimilarShows] = useState([]);
     const [reviews, setReviews] = useState([]);
@@ -22,6 +23,18 @@ const SerieDescription = () => {
                 cancelToken: source.token,
             });
             setSerieData(data);
+        } catch (e) {
+            console.error(e.response);
+        }
+    }
+
+    const fetchTrailer = async () => {
+        try {
+            const { data: { results }} = await axios.get(`https://api.themoviedb.org/3/tv/${serieId}/videos?api_key=${process.env.REACT_APP_API_KEY}`);
+            const trailerLink = results.find((video) => {
+                return video.type === 'Trailer';
+            })
+            setTrailerLink(`https://www.youtube.com/watch?v=${trailerLink.key}`);
         } catch (e) {
             console.error(e.response);
         }
@@ -62,6 +75,7 @@ const SerieDescription = () => {
 
     useEffect(() => {
         fetchSerieData();
+        fetchTrailer();
         fetchCast();
         fetchSimilarShows();
         fetchReviews();
@@ -72,7 +86,7 @@ const SerieDescription = () => {
     return (
         Object.keys(serieData).length > 0 &&
         <main>
-            <SerieDescriptionSection serieData={serieData}/>
+            <SerieDescriptionSection serieData={serieData} trailerLink={trailerLink}/>
 
             <CastSection cast={cast}/>
 

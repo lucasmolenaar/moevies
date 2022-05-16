@@ -14,8 +14,6 @@ const MovieDescription = () => {
     const [similarMovies, setSimilarMovies] = useState([]);
     const [reviews, setReviews] = useState([]);
 
-    console.log(trailerLink);
-
     const { movieId } = useParams();
     const source = axios.CancelToken.source();
 
@@ -37,7 +35,6 @@ const MovieDescription = () => {
                 return video.type === 'Trailer';
             })
             setTrailerLink(`https://www.youtube.com/watch?v=${trailerLink.key}`);
-            console.log('trailer fetch:', results);
         } catch (e) {
             console.error(e.response);
         }
