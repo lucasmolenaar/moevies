@@ -49,6 +49,7 @@ const Movies = () => {
                                     release={movie.release_date || movie.first_air_date}
                                     type={'movie'}
                                     vote={movie.vote_count}
+                                    vote_average={movie.vote_average}
                                 />
                                 );
                             })

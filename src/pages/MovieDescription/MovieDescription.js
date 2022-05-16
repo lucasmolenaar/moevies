@@ -9,9 +9,12 @@ import CastSection from "../../components/CastSection/CastSection";
 
 const MovieDescription = () => {
     const [movieData, setMovieData] = useState({});
+    const [trailerLink, setTrailerLink] = useState('');
     const [cast, setCast] = useState([]);
     const [similarMovies, setSimilarMovies] = useState([]);
     const [reviews, setReviews] = useState([]);
+
+    console.log(trailerLink);
 
     const { movieId } = useParams();
     const source = axios.CancelToken.source();
@@ -24,6 +27,19 @@ const MovieDescription = () => {
             setMovieData(data);
         } catch (e) {
             console.error(e);
+        }
+    }
+
+    const fetchTrailer = async () => {
+        try {
+            const { data: { results }} = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${process.env.REACT_APP_API_KEY}`);
+            const trailerLink = results.find((video) => {
+                return video.type === 'Trailer';
+            })
+            setTrailerLink(`https://www.youtube.com/watch?v=${trailerLink.key}`);
+            console.log('trailer fetch:', results);
+        } catch (e) {
+            console.error(e.response);
         }
     }
 
@@ -62,6 +78,7 @@ const MovieDescription = () => {
 
     useEffect(() => {
         fetchMovieData();
+        fetchTrailer();
         fetchCast();
         fetchSimilarMovies();
         fetchReviews();
@@ -73,7 +90,7 @@ const MovieDescription = () => {
     return (
             Object.keys(movieData).length > 0 &&
                 <main>
-                    <MovieDescriptionSection movieData={movieData}/>
+                    <MovieDescriptionSection movieData={movieData} trailerLink={trailerLink}/>
 
                     <CastSection cast={cast}/>
 

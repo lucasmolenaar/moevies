@@ -74,6 +74,7 @@ const Search = () => {
                                         release={movie.release_date || movie.first_air_date}
                                         type={mediaType}
                                         vote={movie.vote_count}
+                                        vote_average={movie.vote_average}
                                     />
                                 );
                             })

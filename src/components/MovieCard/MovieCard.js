@@ -17,8 +17,12 @@ const MovieCard = ({ id, title, poster, release, type, vote, vote_average }) => 
   return (
     <li onClick={pushToPage} className={styles['movie-card']}>
       {/*<div className={styles.rating}>*/}
-      {/*    /!*{vote_average.toString().length === 1 ? `${vote_average}.0` : vote_average}*!/*/}
+      {/*    {vote_average.toString().length === 1 ? `${vote_average}.0` : vote_average}*/}
       {/*</div>*/}
+
+     <div className={styles.rating}>
+         {vote_average}
+     </div>
 
       <img className={styles.poster} src={`https://image.tmdb.org/t/p/w300${poster}`} alt="poster" />
 

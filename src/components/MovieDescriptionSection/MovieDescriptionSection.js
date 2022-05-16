@@ -1,10 +1,10 @@
 import React, {useContext, useEffect, useState} from 'react';
 import { toast } from 'react-toastify';
-import { useHistory } from "react-router-dom";
 import Button from "@mui/material/Button";
 import GradeIcon from "@mui/icons-material/Grade";
 import DeleteIcon from '@mui/icons-material/Delete';
 import VisibilityIcon from '@mui/icons-material/Visibility';
+import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 
 import { db } from '../../firebase';
 import { collection, doc, addDoc, getDocs, deleteDoc } from "firebase/firestore";
@@ -12,11 +12,10 @@ import { AuthContext } from "../../context/AuthContext";
 
 import styles from './MovieDescriptionSection.module.css';
 
-const MovieDescriptionSection = ({ movieData }) => {
+const MovieDescriptionSection = ({ movieData, trailerLink }) => {
     const [inWatchlist, toggleInWatchlist] = useState(false);
     const moviesCollectionRef = collection(db, 'Movies');
     const { user } = useContext(AuthContext);
-    const history = useHistory();
 
     useEffect(() => {checkIfInWatchlist()}, [])
 
@@ -139,23 +138,47 @@ const MovieDescriptionSection = ({ movieData }) => {
                     <GradeIcon fontSize={'small'}/>
                 </div>
 
-                <Button
-                    className={styles['add-to-watchlist']}
-                    variant='contained'
-                    endIcon={inWatchlist ? <DeleteIcon /> : <VisibilityIcon />}
-                    onClick={inWatchlist ? deleteFromWatchlist : addToWatchlist}
-                    sx={{
-                        mt: 4,
-                        bgcolor: inWatchlist ? '#C95D3B' : '#EEBC1E',
-                        transition: 'all 450ms',
-                        '&:hover': {
-                            bgcolor: inWatchlist ? '#C95D3B' : '#EEBC1E',
+                <div className={styles.buttons}>
+                    <a href={trailerLink}>
+                        <Button
+                            className={styles['trailer-btn']}
+                            variant='contained'
+                            fullWidth
+                            endIcon={<OndemandVideoIcon />}
+                            sx={{
+                                mt: 4,
+                                bgcolor: '#EEBC1E',
+                                transition: 'all 450ms',
+                                '&:hover': {
+                                    bgcolor: '#EEBC1E',
 
-                        }
-                    }}
-                >
-                    {inWatchlist ? `Delete from watchlist` : `Add to watchlist`}
-                </Button>
+                                }
+                            }}
+                        >
+                            Watch trailer
+                        </Button>
+                    </a>
+
+
+                    <Button
+                        className={styles['add-to-watchlist']}
+                        variant='contained'
+                        fullWidth
+                        endIcon={inWatchlist ? <DeleteIcon /> : <VisibilityIcon />}
+                        onClick={inWatchlist ? deleteFromWatchlist : addToWatchlist}
+                        sx={{
+                            mt: 4,
+                            bgcolor: inWatchlist ? '#C95D3B' : '#EEBC1E',
+                            transition: 'all 450ms',
+                            '&:hover': {
+                                bgcolor: inWatchlist ? '#C95D3B' : '#EEBC1E',
+
+                            }
+                        }}
+                    >
+                        {inWatchlist ? `Delete from watchlist` : `Add to watchlist`}
+                    </Button>
+                </div>
             </div>
         </section>
     );

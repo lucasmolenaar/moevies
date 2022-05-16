@@ -47,6 +47,7 @@ const Series = () => {
                                 release={serie.release_date || serie.first_air_date}
                                 type={'serie'}
                                 vote={serie.vote_count}
+                                vote_average={serie.vote_average}
                             />
                         );
                     })
