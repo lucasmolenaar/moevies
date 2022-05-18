@@ -159,25 +159,28 @@ const MovieDescriptionSection = ({ movieData, trailerLink }) => {
                         </Button>
                     </a>
 
-
-                    <Button
-                        className={styles['add-to-watchlist']}
-                        variant='contained'
-                        fullWidth
-                        endIcon={inWatchlist ? <DeleteIcon /> : <VisibilityIcon />}
-                        onClick={inWatchlist ? deleteFromWatchlist : addToWatchlist}
-                        sx={{
-                            mt: 4,
-                            bgcolor: inWatchlist ? '#C95D3B' : '#EEBC1E',
-                            transition: 'all 450ms',
-                            '&:hover': {
+                    {
+                        user &&
+                        <Button
+                            className={styles['add-to-watchlist']}
+                            variant='contained'
+                            fullWidth
+                            endIcon={inWatchlist ? <DeleteIcon /> : <VisibilityIcon />}
+                            onClick={inWatchlist ? deleteFromWatchlist : addToWatchlist}
+                            sx={{
+                                mt: 4,
                                 bgcolor: inWatchlist ? '#C95D3B' : '#EEBC1E',
+                                transition: 'all 450ms',
+                                '&:hover': {
+                                    bgcolor: inWatchlist ? '#C95D3B' : '#EEBC1E',
 
-                            }
-                        }}
-                    >
-                        {inWatchlist ? `Delete from watchlist` : `Add to watchlist`}
-                    </Button>
+                                }
+                            }}
+                        >
+                            {inWatchlist ? `Delete from watchlist` : `Add to watchlist`}
+                        </Button>
+                    }
+
                 </div>
             </div>
         </section>
