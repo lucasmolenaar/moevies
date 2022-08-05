@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/moevies/static/css/main.2716d183.css",
-    "main.js": "/moevies/static/js/main.d8b0477b.js",
+    "main.js": "/moevies/static/js/main.c1bc7a45.js",
     "static/js/787.14e4bc02.chunk.js": "/moevies/static/js/787.14e4bc02.chunk.js",
     "index.html": "/moevies/index.html",
     "main.2716d183.css.map": "/moevies/static/css/main.2716d183.css.map",
-    "main.d8b0477b.js.map": "/moevies/static/js/main.d8b0477b.js.map",
+    "main.c1bc7a45.js.map": "/moevies/static/js/main.c1bc7a45.js.map",
     "787.14e4bc02.chunk.js.map": "/moevies/static/js/787.14e4bc02.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2716d183.css",
-    "static/js/main.d8b0477b.js"
+    "static/js/main.c1bc7a45.js"
   ]
 }
