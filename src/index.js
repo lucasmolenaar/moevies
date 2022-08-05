@@ -11,7 +11,7 @@ import AuthContextProvider from "./context/AuthContext";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={'/moevies'}>
         <AuthContextProvider>
             <App />
             <ToastContainer autoClose={3000} position='bottom-center'/>

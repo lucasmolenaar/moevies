@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88040317-9e52-47f2-be5c-352491450c29" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/MovieDescriptionSection/MovieDescriptionSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieDescriptionSection/MovieDescriptionSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SerieDescriptionSection/SerieDescriptionSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SerieDescriptionSection/SerieDescriptionSection.js" afterDir="false" />
-    </list>
+    <list default="true" id="88040317-9e52-47f2-be5c-352491450c29" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +71,11 @@
       <workItem from="1648201650123" duration="1932000" />
       <workItem from="1649596984245" duration="149992000" />
       <workItem from="1652641783863" duration="8368000" />
-      <workItem from="1652900130031" duration="164000" />
+      <workItem from="1652900130031" duration="248000" />
+      <workItem from="1653125201904" duration="1389000" />
+      <workItem from="1653748778027" duration="1973000" />
+      <workItem from="1656329007530" duration="765000" />
+      <workItem from="1656330440826" duration="3000" />
     </task>
     <servers />
   </component>

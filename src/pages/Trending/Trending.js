@@ -9,6 +9,7 @@ const Trending = () => {
     const [trendingMovies, setTrendingMovies] = useState([]);
     const source = axios.CancelToken.source();
 
+
     useEffect(() => {
         const fetchTrending = async () => {
             try {
